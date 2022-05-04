@@ -1,4 +1,5 @@
 <script></script>
+
 <template>
   <aside>
     <input id="Adja" type="number" placeholder="Adjacente" />
@@ -13,6 +14,8 @@ aside {
 }
 
 #Adja {
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
   padding-left: 2px;
   margin-bottom: 40px;
