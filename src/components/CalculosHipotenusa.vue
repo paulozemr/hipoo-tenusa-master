@@ -1,4 +1,18 @@
-<script></script>
+<script> 
+export default  
+function Hipotenusa (Adja,Oposto){
+  return Math.hypot([Adja[ Oposto]])
+}
+
+function handleCalcular() {
+  const v1 = parseInt(document.getElementById('Adja')).value
+  const v2 = parseInt(document.getElementById('Oposto')).value
+  document.getElementById('resposta').innerHTML = Hipotenusa(v1,v2)
+}
+
+document.getElementById('calcular').addEventListener('click' ,handleCalcular)
+
+</script>
 
 <template>
   <aside>

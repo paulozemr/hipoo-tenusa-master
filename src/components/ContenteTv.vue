@@ -18,13 +18,12 @@ export default {
       context.stroke();
 
       // the fill color
-      context.fillStyle = "#50F";
-      context.fill();
+     // context.fillStyle = "#50F";
+     // context.fill(); 
     },
   },
-  mounted() {
-    this.desenha(50, 200, 400);
-  },
+  // mounted() 
+    // this.desenha(50, 200, 400);
 };
 </script>
 <template>

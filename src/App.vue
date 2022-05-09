@@ -1,14 +1,14 @@
 <script>
 import CalculosHipotenusa from "@/components/CalculosHipotenusa.vue";
-import CAbeça from "@/components/CAbeça.vue";
+import CAbeca from "@/components/CAbeca.vue";
 import FootTwister from "@/components/FootTwister.vue";
 import ContenteTv from "@/components/ContenteTv.vue";
 export default {
-  components: { CalculosHipotenusa, CAbeça, FootTwister, ContenteTv },
+  components: { CalculosHipotenusa, CAbeca, FootTwister, ContenteTv },
 };
 </script>
 <template>
-  <CAbeça />
+  <CAbeca />
   <CalculosHipotenusa />
   <ContenteTv />
   <FootTwister></FootTwister>

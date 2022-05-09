@@ -14,8 +14,9 @@ h1 {
   -webkit-text-fill-color: transparent;
   text-align: center;
   animation: animate 3s linear infinite;
-  padding-bottom: 10px;
+  margin-top: 20px;
 }
+
 
 @keyframes animate {
   0% {
