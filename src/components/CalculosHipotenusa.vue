@@ -1,25 +1,20 @@
-<script> 
-export default  
-function Hipotenusa (Adja,Oposto){
-  return Math.hypot([Adja[ Oposto]])
+<script>
+function Hipotenusa(v1, v2) {
+  return Math.hypot(v1, v2)
 }
 
 function handleCalcular() {
   const v1 = parseInt(document.getElementById('Adja')).value
   const v2 = parseInt(document.getElementById('Oposto')).value
-  document.getElementById('resposta').innerHTML = Hipotenusa(v1,v2)
-}
-
-document.getElementById('calcular').addEventListener('click' ,handleCalcular)
-
-</script>
+  document.getElementById('resposta').innerHTML = Hipotenusa(v1, v2)
+}</script>
 
 <template>
   <aside>
     <input id="Adja" type="number" placeholder="Adjacente" />
     <input id="Oposto" type="number" placeholder="Oposto" />
     <button id="calcular" placeholder="Calcular">Calcular</button>
-    <textarea id="resposta" placeholder="Resposta da Hipotenusa"></textarea>
+    <input id="resposta" placeholder="Resposta da Hipotenusa">
   </aside>
 </template>
 <style>
@@ -38,6 +33,7 @@ aside {
   border-color: blue;
   height: 50px;
 }
+
 #Oposto {
   padding-left: 2px;
   margin-bottom: 30px;
@@ -46,6 +42,7 @@ aside {
   border-color: red;
   height: 50px;
 }
+
 #calcular {
   padding-left: 10px;
   height: 120px;
@@ -55,23 +52,22 @@ aside {
   margin-top: 20px;
   border-radius: 60px;
   border-color: white;
-  background-image: radial-gradient(
-    circle at 50% 50%,
-    #e942bd 0,
-    #f238ad 8.33%,
-    #fa309c 16.67%,
-    #fe2c8a 25%,
-    #ff2c79 33.33%,
-    #ff3069 41.67%,
-    #ff3858 50%,
-    #fb4148 58.33%,
-    #f54b37 66.67%,
-    #ee5526 75%,
-    #e55e10 83.33%,
-    #db6700 91.67%,
-    #d07000 100%
-  );
+  background-image: radial-gradient(circle at 50% 50%,
+      #e942bd 0,
+      #f238ad 8.33%,
+      #fa309c 16.67%,
+      #fe2c8a 25%,
+      #ff2c79 33.33%,
+      #ff3069 41.67%,
+      #ff3858 50%,
+      #fb4148 58.33%,
+      #f54b37 66.67%,
+      #ee5526 75%,
+      #e55e10 83.33%,
+      #db6700 91.67%,
+      #d07000 100%);
 }
+
 #resposta {
   padding-bottom: 100px;
   padding-left: 2px;
