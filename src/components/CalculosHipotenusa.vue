@@ -1,13 +1,6 @@
 <script>
-function Hipotenusa(v1, v2) {
-  return Math.hypot(v1, v2)
-}
+</script>
 
-function handleCalcular() {
-  const v1 = parseInt(document.getElementById('Adja')).value
-  const v2 = parseInt(document.getElementById('Oposto')).value
-  document.getElementById('resposta').innerHTML = Hipotenusa(v1, v2)
-}</script>
 
 <template>
   <aside>
